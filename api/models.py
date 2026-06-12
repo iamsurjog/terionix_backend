@@ -1,0 +1,56 @@
+from django.db import models
+
+
+class ContentSection(models.Model):
+    section_key = models.CharField(max_length=64, unique=True)
+    data = models.JSONField()
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["section_key"]
+
+    def __str__(self):
+        return self.section_key
+
+
+class ContactSubmission(models.Model):
+    TYPE_CHOICES = [
+        ("general", "General Inquiry"),
+        ("career", "Career Application"),
+        ("quote", "Quote Request"),
+    ]
+
+    submission_type = models.CharField(max_length=16, choices=TYPE_CHOICES)
+    form_data = models.JSONField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+
+    def __str__(self):
+        return f"[{self.get_submission_type_display()}] {self.created_at.isoformat()}"
+
+
+class LeaderboardEntry(models.Model):
+    name = models.CharField(max_length=128)
+    time = models.FloatField(help_text="Time in seconds (lower is better)")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["time", "created_at"]
+        verbose_name_plural = "leaderboard entries"
+
+    def __str__(self):
+        return f"{self.name} \u2013 {self.time}s"
+
+
+class GameItem(models.Model):
+    name = models.CharField(max_length=128)
+    recyclable = models.BooleanField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["name"]
+
+    def __str__(self):
+        return self.name
