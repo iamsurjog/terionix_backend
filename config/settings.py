@@ -30,7 +30,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', 'True').lower() in ('true', '1', 'yes')
 APPEND_SLASH = False
 
 # Frontend URL for CORS / CSRF — comma-separated list allowed
-FRONTEND_URLS = os.environ.get('FRONTEND_URLS', 'http://localhost:3000').split(',')
+FRONTEND_URLS = os.environ.get('FRONTEND_URLS', 'http://localhost:3000,http://localhost:3001').split(',')
 
 SESSION_COOKIE_SAMESITE = "None"
 SESSION_COOKIE_SECURE = os.environ.get('SESSION_COOKIE_SECURE', 'True').lower() in ('true', '1')
