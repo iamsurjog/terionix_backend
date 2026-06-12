@@ -32,9 +32,9 @@ APPEND_SLASH = False
 # Frontend URL for CORS / CSRF — comma-separated list allowed
 FRONTEND_URLS = os.environ.get('FRONTEND_URLS', 'http://localhost:3000,http://localhost:3001').split(',')
 
-SESSION_COOKIE_SAMESITE = "None"
+SESSION_COOKIE_SAMESITE = "Lax"
 SESSION_COOKIE_SECURE = os.environ.get('SESSION_COOKIE_SECURE', 'True').lower() in ('true', '1')
-CSRF_COOKIE_SAMESITE = "None"
+CSRF_COOKIE_SAMESITE = "Lax"
 CSRF_COOKIE_SECURE = os.environ.get('SESSION_COOKIE_SECURE', 'True').lower() in ('true', '1')
 CSRF_TRUSTED_ORIGINS = FRONTEND_URLS
 
