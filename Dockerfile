@@ -12,13 +12,12 @@ RUN pip install --no-cache-dir -r requirements.txt gunicorn
 
 # ── Application code ────────────────────────────────────────
 COPY backend/ .
-# content.json is needed by the seed command
-COPY frontend/content.json /app/content.json
+RUN mkdir -p /app/data
 
 # ── Entrypoint ──────────────────────────────────────────────
 EXPOSE 8001
 CMD ["sh", "-c", "\
     python manage.py migrate --noinput && \
-    python manage.py seed_content --path /app/content.json && \
+    python manage.py seed_content && \
     gunicorn config.wsgi:application --bind 0.0.0.0:8001 --workers 4 \
 "]

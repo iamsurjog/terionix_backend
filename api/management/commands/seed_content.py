@@ -8,9 +8,9 @@ from django.contrib.auth.models import User
 from api.models import ContentSection, GameItem, LeaderboardEntry
 
 FALLBACK_PATHS = [
-    settings.BASE_DIR.parent / "frontend" / "content.json",
     settings.BASE_DIR / "content.json",
     settings.BASE_DIR / "api" / "content.json",
+    settings.BASE_DIR.parent / "frontend" / "content.json",
 ]
 
 

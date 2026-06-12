@@ -1,0 +1,1166 @@
+{
+  "site": {
+    "title": "Terionix - E-Waste Management",
+    "name": "Terionix",
+    "logo": "/logo_big.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "name": "Solutions",
+        "type": "dropdown",
+        "children": [
+          { "name": "Overview", "to": "/solutions" },
+          { "name": "E-Waste Collection & Logistics", "to": "/solutions#collection" },
+          { "name": "Data Destruction & Security", "to": "/solutions#data-destruction" },
+          { "name": "EPR Compliance Support", "to": "/solutions#epr" },
+          { "name": "Material Recovery", "to": "/solutions#recovery" }
+        ]
+      },
+      {
+        "name": "Innovation",
+        "type": "dropdown",
+        "children": [
+          { "name": "Overview", "to": "/innovation" },
+          { "name": "R&D Labs", "to": "/innovation#labs" },
+          { "name": "Future Technologies", "to": "/innovation#future-tech" },
+          { "name": "Circular Economy Models", "to": "/innovation#circular-economy" }
+        ]
+      },
+      {
+        "name": "Impact & Insights",
+        "type": "dropdown",
+        "children": [
+          { "name": "Overview", "to": "/impact-insights" },
+          { "name": "Sustainability Impact", "to": "/impact-insights#sustainability" },
+          { "name": "E-Waste Facts", "to": "/impact-insights#facts" },
+          { "name": "Resources & Reports", "to": "/impact-insights#resources" }
+        ]
+      },
+      {
+        "name": "Learn",
+        "type": "dropdown",
+        "children": [
+          { "name": "Recycling 101", "to": "/learn" }
+        ]
+      },
+      {
+        "name": "Company",
+        "type": "dropdown",
+        "children": [
+          { "name": "About Us", "to": "/about" },
+          { "name": "Careers", "to": "/careers" },
+          { "name": "Contact Us", "to": "/contact" }
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Schedule Pickup",
+      "to": "/contact"
+    }
+  },
+  "home": {
+    "tagline": "Where Circuits Bloom",
+    "heroTitle": "E-Waste Recycling, Reimagined",
+    "heroSubtitle": "From corporate compliance to household recycling — we turn electronic waste into opportunity, responsibly.",
+    "partnerButton": {
+      "label": "Partner with Us",
+      "style": "primary",
+      "href": "/contact"
+    },
+    "challengeButton": {
+      "label": "Take the E-Waste Challenge",
+      "style": "bordered",
+      "href": "#game-section"
+    },
+    "matrixCards": [
+      {
+        "icon": "shield",
+        "title": "Compliance (EPR)",
+        "description": "Fully CPCB & TNPCB authorized. We handle every aspect of Extended Producer Responsibility — from collection to certified disposal — so you stay ahead of regulatory requirements.",
+        "stat": "100% Regulatory Compliant",
+        "statIcon": "check"
+      },
+      {
+        "icon": "lock",
+        "title": "Data Destruction & Security",
+        "description": "Military-grade data erasure and physical destruction for all storage media. NAID-certified processes ensure your sensitive data never leaves your control.",
+        "stat": "Zero Data Breaches",
+        "statIcon": "shield"
+      },
+      {
+        "icon": "cpu",
+        "title": "Future Tech (R&D Labs)",
+        "description": "Our in-house R&D lab develops novel recycling techniques for rare earth recovery, PCB processing, and battery material extraction — pushing the boundaries of what's recyclable.",
+        "stat": "95% Recovery Rate",
+        "statIcon": "trending"
+      }
+    ],
+    "trustStats": [
+      { "label": "E-Waste Recycled", "value": "500+", "unit": "Metric Tons" },
+      { "label": "Raw Metals Recovered", "value": "50+", "unit": "Metric Tons" },
+      { "label": "CO₂ Emissions Prevented", "value": "2,500+", "unit": "Metric Tons" },
+      { "label": "Devices Processed", "value": "100K+", "unit": "Units" }
+    ],
+    "authorization": {
+      "title": "TNPCB Authorized Recycler",
+      "badge": "/terionix-tnpcb-badge.png",
+      "description": "Terionix is a registered and authorized e-waste recycler under the Tamil Nadu Pollution Control Board (TNPCB). We comply with all CPCB (Central Pollution Control Board) guidelines for safe e-waste handling, data destruction, and disposal. Corporate clients can verify our authorization and request compliance documentation at any time."
+    },
+    "audience": {
+      "heading": "Who We Serve",
+      "subtitle": "Tailored e-waste solutions for every need — from corporate compliance to individual drop-offs.",
+      "segments": [
+        {
+          "id": "b2b",
+          "title": "Businesses & Enterprises",
+          "icon": "building",
+          "description": "End-to-end EPR compliance, bulk e-waste collection, certified data destruction, and material recovery for corporations, manufacturers, and institutions. Fully CPCB & TNPCB authorized.",
+          "cta": {
+            "label": "Explore Enterprise Solutions",
+            "href": "/solutions"
+          }
+        },
+        {
+          "id": "researchers",
+          "title": "Researchers & Academia",
+          "icon": "academic",
+          "description": "Access to e-waste data and reports, R&D collaboration opportunities, material samples for research, and co-authored sustainability papers from our in-house innovation lab.",
+          "cta": {
+            "label": "Visit Innovation Lab",
+            "href": "/innovation"
+          }
+        },
+        {
+          "id": "individuals",
+          "title": "Individual Users",
+          "icon": "user",
+          "description": "Responsible household e-waste disposal through nearby drop-off points and scheduled pickups. Test your recycling knowledge and get rewarded while making a difference.",
+          "cta": {
+            "label": "Schedule a Pickup",
+            "href": "/contact"
+          }
+        }
+      ]
+    },
+    "impactCalculator": {
+      "title": "E-Waste Impact Calculator",
+      "description": "See the environmental impact of your e-waste. Select devices and quantities to calculate CO₂ emissions prevented.",
+      "items": [
+        { "name": "Smartphone", "co2": 50, "image": "📱" },
+        { "name": "Laptop", "co2": 200, "image": "💻" },
+        { "name": "Tablet", "co2": 90, "image": "📟" },
+        { "name": "Desktop PC", "co2": 350, "image": "🖥️" },
+        { "name": "Monitor (LCD)", "co2": 120, "image": "🖥️" },
+        { "name": "Printer", "co2": 80, "image": "🖨️" },
+        { "name": "Keyboard / Mouse", "co2": 15, "image": "⌨️" },
+        { "name": "Battery Pack", "co2": 40, "image": "🔋" }
+      ]
+    },
+    "corporateDashboard": {
+      "title": "Corporate Command Center",
+      "subtitle": "Your complete e-waste management suite — from scheduling to sustainability reporting.",
+      "features": [
+        {
+          "icon": "calendar",
+          "title": "Schedule a Pickup",
+          "description": "Request on-demand or recurring pickups for your corporate locations. Choose collection windows, specify equipment types, and get real-time logistics updates."
+        },
+        {
+          "icon": "tracking",
+          "title": "Real-Time Waste Tracking",
+          "description": "GPS-enabled tracking from collection to final processing. Know exactly where your e-waste is at every stage with a complete chain of custody."
+        },
+        {
+          "icon": "certificate",
+          "title": "Data Destruction Certificates",
+          "description": "Instantly access tamper-proof, serialized Blancco certificates for every data-bearing asset. Full video-graphed audit trail included."
+        },
+        {
+          "icon": "impact",
+          "title": "Environmental Impact Reports",
+          "description": "Download detailed ESG reports quantifying your carbon savings. 'You saved X tons of CO₂ by recycling with us' — perfect for BRSR and sustainability disclosures."
+        }
+      ]
+    },
+    "whyTerionix": {
+      "heading": "Built for Enterprise",
+      "subtitle": "Three pillars that make Terionix the trusted partner for corporate e-waste management.",
+      "pillars": [
+        {
+          "icon": "lock",
+          "title": "Data Security",
+          "body": "We don't just recycle your hardware; we eliminate your data liability. We provide a tamper-proof, video-graphed data destruction process with serialized Blancco certificates that stand up to any global security audit."
+        },
+        {
+          "icon": "shield",
+          "title": "Legal Compliance",
+          "body": "Under the E-Waste Management Rules, your company is legally liable if your waste ends up in a landfill. We handle Form 6 manifests, provide CPCB-authorized recycling certificates, and insulate your brand from regulatory penalties."
+        },
+        {
+          "icon": "trending",
+          "title": "Green PR / ESG",
+          "body": "We provide a quarterly 'Green Dashboard' for your annual BRSR report. We don't just give you a bill; we tell you exactly how many tons of carbon emissions your company averted by recycling with Terionix."
+        }
+      ]
+    }
+  },
+  "solutions": {
+    "heading": {
+      "prefix": "Our ",
+      "highlight": "Solutions"
+    },
+    "intro": "End-to-end e-waste management tailored for businesses, institutions, and government agencies. From compliant collection to certified destruction, we make responsible recycling seamless.",
+    "sections": [
+      {
+        "id": "collection",
+        "title": "E-Waste Collection & Logistics",
+        "icon": "M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4",
+        "body": "Our reverse logistics network covers the entire Tamil Nadu region. We offer scheduled pickups, one-time bulk collections, and permanent drop-off points. Every shipment is GPS-tracked, carefully packed, and transported in compliance with hazardous material handling guidelines.",
+        "features": [
+          "Scheduled and on-demand pickup services",
+          "GPS-tracked transport with chain of custody",
+          "Secure packing for sensitive equipment",
+          "Bulk collection drives for corporates and institutions",
+          "PAN-Tamil Nadu coverage with expanding pan-India network"
+        ]
+      },
+      {
+        "id": "data-destruction",
+        "title": "Data Destruction & Security",
+        "icon": "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z",
+        "body": "Before any device is recycled, all data is destroyed using certified methods. We offer on-site degaussing, physical shredding, and software-based erasure — each with a verifiable audit trail and certificate of destruction.",
+        "features": [
+          "NSA/CSS-compliant degaussing for magnetic media",
+          "Physical shredding (hard drives, SSDs, tapes)",
+          "Software-based data erasure (DoD 5220.22-M standard)",
+          "On-site destruction available for sensitive clients",
+          "Certificate of destruction with serial number tracking"
+        ]
+      },
+      {
+        "id": "epr",
+        "title": "EPR Compliance Support",
+        "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+        "body": "We help producers meet their Extended Producer Responsibility obligations under the E-Waste (Management) Rules, 2022. Our end-to-end compliance package covers documentation, collection targets, recycling certificates, and annual reporting.",
+        "features": [
+          "Complete EPR documentation and filing support",
+          "Collection target fulfillment with verified channelization",
+          "Quarterly and annual compliance reporting",
+          "Dedu credit management and transfer",
+          "Audit-ready records for CPCB/SPCB inspections"
+        ]
+      },
+      {
+        "id": "recovery",
+        "title": "Material Recovery",
+        "icon": "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15",
+        "body": "Our processing facility recovers valuable materials from e-waste using a combination of mechanical sorting, density separation, and hydrometallurgical processes. Recovered materials are sent directly to refineries and manufacturers, closing the loop in the circular economy.",
+        "features": [
+          "Multi-stage mechanical sorting and shredding",
+          "Precious metal recovery (gold, silver, palladium)",
+          "Base metal recovery (copper, aluminum, tin)",
+          "Plastic recycling and compounding",
+          "Hazardous component safe disposal"
+        ]
+      },
+      {
+        "id": "compliance-certification",
+        "title": "Compliance & Certification",
+        "icon": "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+        "body": "We provide full compliance documentation for your annual environmental audits, including CPCB-compliant Green Certificates of Recycling and Form 6 manifests (Hazardous & E-Waste Manifest) as required under the E-Waste (Management) Rules issued by the Ministry of Environment, Forest and Climate Change (MoEFCC) and Central Pollution Control Board (CPCB). Corporate clients can legally write off assets only with proper Form 6 documentation and a Certificate of Disposal/Recycling from an authorized recycler — we provide both.",
+        "features": [
+          "CPCB-compliant Green Certificates of Recycling for every batch processed",
+          "Form 6 Manifest (Hazardous & E-Waste) for corporate asset write-off",
+          "Certificate of Data Destruction with serial number tracking",
+          "Certificate of Disposal/Recycling for regulatory audit trails",
+          "Full EPR documentation support under E-Waste (Management) Rules, 2022",
+          "Quarterly compliance reports for CPCB/SPCB inspections",
+          "Dedu credit management and transfer documentation"
+        ]
+      }
+    ],
+    "cta": {
+      "text": "Ready to partner with a compliant e-waste recycler?",
+      "buttonLabel": "Schedule a Consultation",
+      "buttonHref": "/contact"
+    }
+  },
+  "innovation": {
+    "heading": {
+      "prefix": "Innovation at ",
+      "highlight": "Terionix"
+    },
+    "intro": "We invest in research and technology to push the boundaries of e-waste recycling. Our innovation lab is where tomorrow's recycling solutions take shape today.",
+    "sections": [
+      {
+        "id": "labs",
+        "title": "R&D Labs",
+        "icon": "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z",
+        "body": "Our in-house R&D laboratory is equipped with spectrometers, shredders, and chemical processing units. Our team of materials scientists and environmental engineers work on improving recovery rates for complex electronic components and developing new recycling methodologies.",
+        "highlights": [
+          "In-house materials characterization lab",
+          "Partnerships with academic institutions for recycling research",
+          "Patent-pending processes for rare earth recovery",
+          "Continuous improvement in recovery efficiency"
+        ]
+      },
+      {
+        "id": "future-tech",
+        "title": "Future Technologies",
+        "icon": "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
+        "body": "We're exploring next-generation recycling technologies including AI-powered sorting systems, robotic disassembly lines, and bioleaching — using microorganisms to extract metals from PCBs. These technologies will define the future of e-waste recycling.",
+        "highlights": [
+          "AI-based waste stream classification and sorting",
+          "Robotic disassembly for complex electronics",
+          "Bioleaching research for precious metal extraction",
+          "Closed-loop material traceability using blockchain"
+        ]
+      },
+      {
+        "id": "circular-economy",
+        "title": "Circular Economy Models",
+        "icon": "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15",
+        "body": "Beyond recycling, we champion circular economy principles — designing out waste, keeping materials in use, and regenerating natural systems. We work with manufacturers to design for recyclability and help businesses transition to circular procurement models.",
+        "highlights": [
+          "Design-for-recycling consultancy for electronics manufacturers",
+          "Circular procurement advisory for corporate clients",
+          "Refurbishment and resale programs for functional equipment",
+          "Material passporting and traceability systems"
+        ]
+      }
+    ],
+    "cta": {
+      "text": "Interested in our R&D work or circular economy consulting?",
+      "buttonLabel": "Get in Touch",
+      "buttonHref": "/contact"
+    }
+  },
+  "impactInsights": {
+    "heading": {
+      "prefix": "Impact & ",
+      "highlight": "Insights"
+    },
+    "intro": "Transparency is at the core of what we do. Explore our environmental impact metrics, learn about e-waste, and access resources to make informed decisions.",
+    "sections": [
+      {
+        "id": "sustainability",
+        "title": "Sustainability Impact",
+        "icon": "M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+        "body": "Every device we recycle contributes to measurable environmental good. Our impact tracking system monitors every metric — from kilograms of e-waste processed to tonnes of CO₂ emissions prevented. We publish quarterly impact reports for full transparency.",
+        "metrics": [
+          { "label": "Total E-Waste Processed", "value": "500+", "unit": "Metric Tons" },
+          { "label": "CO₂ Emissions Prevented", "value": "2,500+", "unit": "Metric Tons" },
+          { "label": "Water Saved", "value": "15M+", "unit": "Liters" },
+          { "label": "Energy Saved", "value": "8,000+", "unit": "MWh" },
+          { "label": "Raw Metals Recovered", "value": "50+", "unit": "Metric Tons" },
+          { "label": "Landfill Diversion Rate", "value": "95", "unit": "Percent" }
+        ]
+      },
+      {
+        "id": "facts",
+        "title": "E-Waste Facts",
+        "icon": "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253",
+        "body": "E-waste is the world's fastest-growing waste stream. Understanding the scale of the problem — and the opportunity — is the first step toward meaningful action.",
+        "facts": [
+          {
+            "stat": "53.6M",
+            "unit": "Metric Tons",
+            "description": "E-waste generated globally in 2023 — enough to cover the entire state of Tamil Nadu."
+          },
+          {
+            "stat": "17.4%",
+            "unit": "Recycling Rate",
+            "description": "Only 17.4% of e-waste is properly collected and recycled worldwide."
+          },
+          {
+            "stat": "$57B",
+            "unit": "Value",
+            "description": "The estimated value of raw materials in e-waste annually — more than most countries' GDP."
+          },
+          {
+            "stat": "70%",
+            "unit": "of Toxic Waste",
+            "description": "E-waste accounts for 70% of the toxic waste in landfills, yet represents only 2% of landfill volume."
+          }
+        ]
+      },
+      {
+        "id": "resources",
+        "title": "Resources & Reports",
+        "icon": "M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z",
+        "body": "Access our library of resources including quarterly impact reports, whitepapers on e-waste management best practices, regulatory updates, and case studies from our clients.",
+        "resources": [
+          { "title": "E-Waste Management Rules 2022 — A Compliance Guide", "type": "Whitepaper" },
+          { "title": "Terionix Quarterly Impact Report — Q1 2026", "type": "Report" },
+          { "title": "Data Destruction Best Practices for Enterprises", "type": "Guide" },
+          { "title": "The Circular Electronics Playbook", "type": "Whitepaper" },
+          { "title": "EPR Compliance: A Step-by-Step Manual", "type": "Handbook" }
+        ]
+      }
+    ],
+    "cta": {
+      "text": "Want to see our latest impact numbers or download a report?",
+      "buttonLabel": "Download Reports",
+      "buttonHref": "/contact"
+    }
+  },
+  "about": {
+    "heading": {
+      "prefix": "About ",
+      "highlight": "Us"
+    },
+    "paragraphs": [
+      {
+        "className": "",
+        "segments": [
+          {
+            "text": "Terionix",
+            "className": "text-accent font-semibold"
+          },
+          {
+            "text": " is a forward-thinking e-waste management company committed to solving the growing problem of electronic waste. We provide comprehensive solutions for businesses, governments, and individuals who want to dispose of their electronic waste responsibly."
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Founded with a vision to create a cleaner, greener future, Terionix operates across the entire e-waste lifecycle — from collection and transportation to sorting, processing, and certified disposal. We ensure that every piece of electronic waste is tracked, handled, and recycled in full compliance with environmental regulations."
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Our mission",
+            "className": "text-secondary font-semibold"
+          },
+          {
+            "text": " is to reduce the environmental and health hazards caused by improper e-waste disposal. We believe in the principles of the circular economy — recovering valuable materials from end-of-life electronics and reintroducing them into the supply chain."
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Whether you are a corporation clearing out old IT equipment, a manufacturer managing production waste, or an individual dropping off a pile of old chargers, Terionix has a solution tailored to your needs."
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "label": "Our History",
+        "href": "/history"
+      },
+      {
+        "label": "Services & Solutions",
+        "href": "/solutions"
+      },
+      {
+        "label": "Careers",
+        "href": "/careers"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact"
+      }
+    ],
+    "certifications": [
+      {
+        "title": "TNPCB Authorized",
+        "description": "Registered e-waste recycler under Tamil Nadu Pollution Control Board"
+      },
+      {
+        "title": "CPCB Compliant",
+        "description": "Full compliance with Central Pollution Control Board guidelines"
+      },
+      {
+        "title": "ISO 14001:2015",
+        "description": "Environmental management system certified"
+      }
+    ]
+  },
+  "history": {
+    "heading": {
+      "prefix": "Our ",
+      "highlight": "History"
+    },
+    "paragraphs": [
+      {
+        "className": "relative pl-6 border-l-4 border-secondary",
+        "segments": [
+          {
+            "text": "Terionix",
+            "className": "text-accent font-semibold"
+          },
+          {
+            "text": " began its journey with a simple belief — that electronic waste should not end up in landfills ever. What started as a small initiative by a group of environmental enthusiasts has grown into a full-fledged e-waste management company serving hundreds of clients across the region."
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "In our early years, we focused on awareness — reaching out to schools, offices, and communities to educate people about the dangers of improper e-waste disposal. We organized collection drives and partnered with local municipalities to set up drop-off points."
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "As demand grew",
+            "className": "text-secondary font-semibold"
+          },
+          {
+            "text": ", we invested in building a proper processing facility equipped with shredding, sorting, and material recovery equipment. Today, we have the infrastructure to handle large volumes of e-waste safely and efficiently."
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Looking ahead, Terionix aims to expand its reach, develop partnerships with more manufacturers, and continue pushing for better e-waste infrastructure across the country. Our goal is to make responsible e-waste disposal the norm, not the exception."
+          }
+        ]
+      }
+    ]
+  },
+  "careers": {
+    "heading": {
+      "prefix": "Careers at ",
+      "highlight": "Terionix"
+    },
+    "subtitle": "Join us in building a sustainable future through responsible e-waste management. Explore open positions across our teams.",
+    "whyTerionix": [
+      {
+        "text": "Meaningful work that makes a real environmental impact"
+      },
+      {
+        "text": "Opportunities for growth in a growing industry"
+      },
+      {
+        "text": "Training and certification support"
+      },
+      {
+        "text": "Collaborative and mission-driven team culture"
+      },
+      {
+        "text": "Safe working environment with proper safety protocols"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Collection & Logistics",
+        "slug": "collection-logistics",
+        "roles": [
+          "E-Waste Collection Staff – pickup from clients, households, and businesses.",
+          "Reverse Logistics Coordinator – manage routes, transport scheduling.",
+          "Driver / Vehicle Operator – safe transport of e-waste materials.",
+          "Field Coordinator – liaison with collection centres and clients."
+        ]
+      },
+      {
+        "title": "Sorting & Processing",
+        "slug": "sorting-processing",
+        "roles": [
+          "Sorting Operator – segregate metals, plastics, PCBs, batteries, etc.",
+          "Disassembly Technician – dismantle electronics safely.",
+          "Hazardous Waste Handler – manage batteries, CRTs, fluorescent lamps.",
+          "Recycling Plant Operator – oversee shredding, crushing, and refining."
+        ]
+      },
+      {
+        "title": "Technical & IT",
+        "slug": "technical-it",
+        "roles": [
+          "Data Destruction Specialist – ensure secure erasure/shredding of hard drives.",
+          "Asset Recovery Technician – test and refurbish reusable electronics.",
+          "IT Hardware Technician – repair and resell usable devices.",
+          "Inventory & Tracking Executive – maintain digital records of collected/recycled items."
+        ]
+      },
+      {
+        "title": "Compliance & Certification",
+        "slug": "compliance-certification",
+        "roles": [
+          "EHS (Environment, Health & Safety) Officer – ensure safety standards.",
+          "Compliance Manager – handle e-waste rules, documentation, CPCB/SPCB licenses.",
+          "Certification Officer – issue recycling/disposal certificates to clients."
+        ]
+      },
+      {
+        "title": "Business & Operations",
+        "slug": "business-operations",
+        "roles": [
+          "Operations Manager – oversee plant, staff, and workflow.",
+          "Procurement Officer – source tools, machinery, and consumables.",
+          "Business Development Executive – generate leads for e-waste collection.",
+          "Client Relationship Manager – maintain B2B client satisfaction."
+        ]
+      },
+      {
+        "title": "Sales & Marketing",
+        "slug": "sales-marketing",
+        "roles": [
+          "EPR Consultant – help producers comply with Extended Producer Responsibility.",
+          "Sales Executive – corporate tie-ups for bulk e-waste disposal.",
+          "Marketing Coordinator – awareness campaigns, online/offline promotions.",
+          "CSR Coordinator – manage community and corporate social responsibility programs."
+        ]
+      },
+      {
+        "title": "Research & Innovation",
+        "slug": "research-innovation",
+        "roles": [
+          "R&D Specialist – new recycling technologies, material recovery.",
+          "Sustainability Analyst – measure environmental impact, carbon savings.",
+          "Circular Economy Consultant – explore reuse/resell opportunities."
+        ]
+      },
+      {
+        "title": "Administration & Support",
+        "slug": "admin-support",
+        "roles": [
+          "HR Executive – recruit and train staff.",
+          "Accounts & Finance Officer – billing, payroll, tax compliance.",
+          "Customer Support Executive – handle client inquiries.",
+          "Office Administrator – manage documentation and day-to-day tasks."
+        ]
+      }
+    ],
+    "cta": {
+      "text": "Don't see the right fit? Reach out to us — we're always looking for talent.",
+      "buttonLabel": "Apply Now"
+    }
+  },
+  "contact": {
+    "heading": {
+      "prefix": "Contact ",
+      "highlight": "Us"
+    },
+    "generalSegment": {
+      "heading": "General Inquiries",
+      "description": "Have a question about our services? Want to schedule a pickup? Drop us a message and we'll get back to you."
+    },
+    "careerSegment": {
+      "heading": "Career Opportunities",
+      "description": "Interested in joining Terionix? Fill out the form below with your details and the position you're interested in."
+    },
+    "tabs": [
+      "General Inquiry",
+      "Career",
+      "Request a Quote"
+    ],
+    "generalForm": {
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "label": "Email",
+          "type": "email",
+          "required": true
+        },
+        {
+          "label": "Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "label": "Message",
+          "type": "textarea",
+          "required": true,
+          "rows": 5
+        }
+      ],
+      "submitText": "Send Message"
+    },
+    "careerForm": {
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "label": "Email",
+          "type": "email",
+          "required": true
+        },
+        {
+          "label": "Phone",
+          "type": "tel",
+          "required": true
+        },
+        {
+          "label": "Position Interested In",
+          "type": "select",
+          "required": true
+        },
+        {
+          "label": "Resume (URL)",
+          "type": "url",
+          "required": true,
+          "note": "Link to your resume (Google Drive, Dropbox, etc.)"
+        },
+        {
+          "label": "Cover Letter",
+          "type": "textarea",
+          "required": false,
+          "rows": 4
+        }
+      ],
+      "categoryMapping": {
+        "collection-logistics": "e-waste-collection-staff",
+        "sorting-processing": "sorting-operator",
+        "technical-it": "data-destruction-specialist",
+        "compliance-certification": "ehs-officer",
+        "business-operations": "operations-manager",
+        "sales-marketing": "epr-consultant",
+        "research-innovation": "rd-specialist",
+        "admin-support": "hr-executive"
+      },
+      "positions": [
+        {
+          "group": "Collection & Logistics",
+          "options": [
+            { "value": "e-waste-collection-staff", "label": "E-Waste Collection Staff" },
+            { "value": "reverse-logistics-coordinator", "label": "Reverse Logistics Coordinator" },
+            { "value": "driver-vehicle-operator", "label": "Driver / Vehicle Operator" },
+            { "value": "field-coordinator", "label": "Field Coordinator" }
+          ]
+        },
+        {
+          "group": "Sorting & Processing",
+          "options": [
+            { "value": "sorting-operator", "label": "Sorting Operator" },
+            { "value": "disassembly-technician", "label": "Disassembly Technician" },
+            { "value": "hazardous-waste-handler", "label": "Hazardous Waste Handler" },
+            { "value": "recycling-plant-operator", "label": "Recycling Plant Operator" }
+          ]
+        },
+        {
+          "group": "Technical & IT",
+          "options": [
+            { "value": "data-destruction-specialist", "label": "Data Destruction Specialist" },
+            { "value": "asset-recovery-technician", "label": "Asset Recovery Technician" },
+            { "value": "it-hardware-technician", "label": "IT Hardware Technician" },
+            { "value": "inventory-tracking-executive", "label": "Inventory & Tracking Executive" }
+          ]
+        },
+        {
+          "group": "Compliance & Certification",
+          "options": [
+            { "value": "ehs-officer", "label": "EHS Officer" },
+            { "value": "compliance-manager", "label": "Compliance Manager" },
+            { "value": "certification-officer", "label": "Certification Officer" }
+          ]
+        },
+        {
+          "group": "Business & Operations",
+          "options": [
+            { "value": "operations-manager", "label": "Operations Manager" },
+            { "value": "procurement-officer", "label": "Procurement Officer" },
+            { "value": "business-development-executive", "label": "Business Development Executive" },
+            { "value": "client-relationship-manager", "label": "Client Relationship Manager" }
+          ]
+        },
+        {
+          "group": "Sales & Marketing",
+          "options": [
+            { "value": "epr-consultant", "label": "EPR Consultant" },
+            { "value": "sales-executive", "label": "Sales Executive" },
+            { "value": "marketing-coordinator", "label": "Marketing Coordinator" },
+            { "value": "csr-coordinator", "label": "CSR Coordinator" }
+          ]
+        },
+        {
+          "group": "Research & Innovation",
+          "options": [
+            { "value": "rd-specialist", "label": "R&D Specialist" },
+            { "value": "sustainability-analyst", "label": "Sustainability Analyst" },
+            { "value": "circular-economy-consultant", "label": "Circular Economy Consultant" }
+          ]
+        },
+        {
+          "group": "Administration & Support",
+          "options": [
+            { "value": "hr-executive", "label": "HR Executive" },
+            { "value": "accounts-finance-officer", "label": "Accounts & Finance Officer" },
+            { "value": "customer-support-executive", "label": "Customer Support Executive" },
+            { "value": "office-administrator", "label": "Office Administrator" }
+          ]
+        }
+      ],
+      "submitText": "Submit Application"
+    },
+    "quoteSegment": {
+      "heading": "Request a Quote",
+      "description": "Tell us what e-waste materials you have and we'll provide a customized quote. Multiple items and quantities supported."
+    },
+    "quoteForm": {
+      "types": [
+        { "id": "individual", "label": "Individual" },
+        { "id": "business", "label": "Business" }
+      ],
+      "fields": [
+        { "label": "Full Name", "type": "text", "required": true },
+        { "label": "Email", "type": "email", "required": true },
+        { "label": "Phone", "type": "tel", "required": true },
+        { "label": "Street Address", "type": "text", "required": true },
+        { "label": "City", "type": "text", "required": true },
+        { "label": "State", "type": "text", "required": true },
+        { "label": "Pincode", "type": "text", "required": true },
+        { "label": "Additional Notes", "type": "textarea", "required": false, "rows": 4 }
+      ],
+      "submitText": "Request Quote"
+    }
+  },
+  "game": {
+    "items": [
+      { "name": "Aluminum Can", "recyclable": true },
+      { "name": "Plastic Bottle", "recyclable": true },
+      { "name": "Glass Jar", "recyclable": true },
+      { "name": "Cardboard Box", "recyclable": true },
+      { "name": "Newspaper", "recyclable": true },
+      { "name": "Old Phone Charger", "recyclable": false },
+      { "name": "Broken CRT Monitor", "recyclable": false },
+      { "name": "Used Tissue Paper", "recyclable": false },
+      { "name": "Batteries", "recyclable": false },
+      { "name": "Pizza Box (greasy)", "recyclable": false },
+      { "name": "Tin Foil", "recyclable": true },
+      { "name": "Milk Carton", "recyclable": true },
+      { "name": "Styrofoam Cup", "recyclable": false },
+      { "name": "Old Printer Cartridge", "recyclable": false },
+      { "name": "Steel Can", "recyclable": true },
+      { "name": "Juice Carton", "recyclable": true },
+      { "name": "Light Bulb", "recyclable": false },
+      { "name": "Copper Wire", "recyclable": true },
+      { "name": "Chip Bags", "recyclable": false },
+      { "name": "Old Keyboard", "recyclable": false }
+    ]
+  },
+  "leaderboard": [
+    { "name": "TEST", "time": 3.917 },
+    { "name": "Riya", "time": 8.4 },
+    { "name": "Arjun", "time": 9.1 },
+    { "name": "Priya", "time": 10.2 },
+    { "name": "SG 3", "time": 14.194 }
+  ],
+  "social": {
+    "links": [
+      { "platform": "linkedin", "url": "https://www.linkedin.com/company/96150706/admin/dashboard/", "label": "LinkedIn" },
+      { "platform": "facebook", "url": "https://www.facebook.com/profile.php?id=61579600316044", "label": "Facebook" }
+    ]
+  },
+  "learn": {
+    "courseTitle": "E-Waste Recycling 101",
+    "courseSubtitle": "A beginner-friendly course on understanding e-waste and taking action for a cleaner planet.",
+    "moduleList": [
+      { "id": "what-is-ewaste", "contentKey": "whatIsEwaste", "title": "What is E-Waste?", "emoji": "🤔", "desc": "Learn what counts as e-waste and understand the scale of the global problem.", "time": "6 min" },
+      { "id": "hidden-value", "contentKey": "hiddenValue", "title": "The Hidden Value", "emoji": "💎", "desc": "Discover the precious materials hidden inside your old devices and why mining, not dumping, is the future.", "time": "7 min" },
+      { "id": "environmental-impact", "contentKey": "environmentalImpact", "title": "Environmental Impact", "emoji": "🌍", "desc": "Understand how improper e-waste disposal affects our planet, wildlife, and human health.", "time": "8 min" },
+      { "id": "the-process", "contentKey": "theProcess", "title": "The Recycling Process", "emoji": "🔄", "desc": "Follow e-waste on its journey from your home to becoming brand-new products.", "time": "8 min" },
+      { "id": "quiz", "contentKey": "quiz", "title": "Knowledge Check", "emoji": "🧠", "desc": "Test what you've learned with a fun quiz covering all course modules.", "time": "4 min" },
+      { "id": "take-action", "contentKey": "takeAction", "title": "Take Action", "emoji": "🤝", "desc": "Make a commitment, find recycling resources, and become a champion for change.", "time": "5 min" }
+    ],
+    "dashboard": {
+      "heading": "Welcome to E-Waste Recycling 101",
+      "body": "This course will take you from the basics of what e-waste is, through the hidden value in your old devices, the environmental impact of improper disposal, and how recycling works — all the way to taking real action. Each module builds on the last, and you can track your progress as you go.",
+      "stats": [
+        { "value": "6", "unit": "modules", "label": "to complete" },
+        { "value": "~40", "unit": "minutes", "label": "total time" },
+        { "value": "🧠", "unit": "quiz", "label": "test your knowledge" },
+        { "value": "🤝", "unit": "pledge", "label": "take action" }
+      ]
+    },
+    "whatIsEwaste": {
+      "heroTitle": "What is E-Waste?",
+      "heroSubtitle": "Before we can solve a problem, we need to understand it. Let's start with the basics — what exactly counts as e-waste, how much there is, and why it's different from regular trash.",
+      "sections": [
+        {
+          "type": "text",
+          "id": "intro",
+          "title": "Defining E-Waste",
+          "body": "E-waste (electronic waste) refers to any discarded electrical or electronic device — anything with a plug, battery, or circuit board that's reached the end of its useful life. This includes everything from a tiny smartwatch to a full-sized refrigerator. When these devices are thrown in the trash instead of being properly recycled, they release toxic substances that harm our environment and health."
+        },
+        {
+          "type": "grid",
+          "id": "categories",
+          "title": "What Counts as E-Waste?",
+          "items": [
+            { "emoji": "📱", "label": "Phones & Tablets", "desc": "Smartphones, tablets, e-readers, wearables" },
+            { "emoji": "💻", "label": "Computers & Laptops", "desc": "Desktops, laptops, servers, hard drives" },
+            { "emoji": "📺", "label": "Displays", "desc": "TVs, monitors, LED screens, projectors" },
+            { "emoji": "🔋", "label": "Batteries & Power", "desc": "Lithium-ion, power banks, UPS, adapters" },
+            { "emoji": "🔌", "label": "Cables & Accessories", "desc": "Chargers, cables, headphones, keyboards" },
+            { "emoji": "🧊", "label": "Large Appliances", "desc": "Refrigerators, ACs, washing machines" },
+            { "emoji": "🖨️", "label": "Peripherals", "desc": "Printers, scanners, routers, modems" },
+            { "emoji": "🎮", "label": "Gaming & Entertainment", "desc": "Consoles, controllers, VR headsets" }
+          ]
+        },
+        {
+          "type": "stats",
+          "id": "scale",
+          "title": "The Scale of the Problem",
+          "stats": [
+            { "value": "62M", "unit": "metric tons", "label": "e-waste generated in 2024 — that's 2x the weight of all cars sold in the US" },
+            { "value": "3x", "unit": "faster", "label": "e-waste is growing 3 times faster than any other waste stream" },
+            { "value": "$91B", "unit": "value", "label": "of recoverable materials are dumped or burned each year" },
+            { "value": "78%", "unit": "unaccounted", "label": "of the world's e-waste has no formal recycling tracking" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "growth",
+          "title": "Why Is E-Waste Growing So Fast?",
+          "body": "Three main drivers: First, planned obsolescence — devices are designed to be replaced every 2-3 years. Second, falling prices make it cheaper to buy new than repair old. Third, the rise of electronics in every part of our lives — from smart homes to electric vehicles — means more devices exist than ever before. The average person now owns over 10 connected devices, and that number keeps climbing."
+        },
+        {
+          "type": "callout",
+          "id": "why-different",
+          "emoji": "⚠️",
+          "title": "E-Waste is Different",
+          "body": "Unlike paper or glass waste, e-waste contains both highly valuable materials (gold, silver, copper) AND highly toxic substances (lead, mercury, cadmium). This dual nature makes proper recycling both economically important and environmentally critical — you can't just throw electronics in a landfill."
+        }
+      ]
+    },
+    "hiddenValue": {
+      "heroTitle": "The Hidden Value in Your Drawer",
+      "heroSubtitle": "That drawer full of old phones and cables isn't just clutter — it's an urban gold mine. Let's look at what's actually inside our electronic devices.",
+      "sections": [
+        {
+          "type": "text",
+          "id": "intro",
+          "title": "Your Devices Are Treasure Chests",
+          "body": "Every electronic device contains a surprising amount of valuable materials. A typical smartphone contains over 60 different elements from the periodic table — including precious metals like gold, silver, platinum, and palladium, as well as base metals like copper, tin, and aluminum. Even the small amounts add up dramatically when you consider the millions of devices discarded each year."
+        },
+        {
+          "type": "grid",
+          "id": "materials",
+          "title": "What's Inside Your Devices?",
+          "items": [
+            { "emoji": "🥇", "label": "Gold", "desc": "Used in circuit boards and connectors for its conductivity. One ton of smartphones = 100x more gold than one ton of ore." },
+            { "emoji": "🥈", "label": "Silver", "desc": "Found in circuit boards, keyboards, and displays. Essential for electrical contacts." },
+            { "emoji": "🪙", "label": "Copper", "desc": "The most abundant valuable metal in electronics. Used in wiring, cables, and circuit boards." },
+            { "emoji": "🧪", "label": "Rare Earth Elements", "desc": "Neodymium, dysprosium, and others used in speakers, vibration motors, and screens." },
+            { "emoji": "🪨", "label": "Lithium & Cobalt", "desc": "Critical for batteries. Mining them is environmentally destructive — recycling reduces the need." },
+            { "emoji": "🧊", "label": "Plastics & Glass", "desc": "Up to 40% of a device's weight. Can be recycled into new products, furniture, and building materials." }
+          ]
+        },
+        {
+          "type": "stats",
+          "id": "comparison",
+          "title": "Mining vs. Recycling: The Numbers",
+          "stats": [
+            { "value": "100x", "unit": "more gold", "label": "One ton of smartphones has 100x more gold than one ton of gold ore" },
+            { "value": "95%", "unit": "recoverable", "label": "of materials in a mobile phone can be recovered and reused" },
+            { "value": "80%", "unit": "less energy", "label": "Recycling aluminum uses 80% less energy than mining new bauxite" },
+            { "value": "7x", "unit": "more copper", "label": "in recycled PCBs than in natural copper ore" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "urban-mining",
+          "title": "What is Urban Mining?",
+          "body": "Urban mining is the concept of 'mining' valuable materials from discarded electronics instead of digging them out of the earth. It's called 'urban' because the resources are in our cities — in our homes, offices, and landfills. The concentration of precious metals in e-waste is often 10 to 100 times higher than in natural ore deposits. Urban mining creates local jobs, reduces environmental destruction from mining, and keeps valuable materials in the economy."
+        },
+        {
+          "type": "callout",
+          "id": "key-takeaway",
+          "emoji": "💎",
+          "title": "The Bottom Line",
+          "body": "Your old phone is not trash — it's a resource. The $91 billion worth of recoverable materials thrown away each year represents both an environmental tragedy and an enormous economic opportunity."
+        }
+      ]
+    },
+    "environmentalImpact": {
+      "heroTitle": "Environmental Impact",
+      "heroSubtitle": "What happens when e-waste ends up in landfills? The consequences are far more serious than most people realize.",
+      "sections": [
+        {
+          "type": "text",
+          "id": "intro",
+          "title": "The Hidden Cost of 'Out of Sight'",
+          "body": "When electronics are thrown in the trash, they end up in landfills where they're crushed under tons of garbage. Over time, rain water filters through the landfill, creating a toxic liquid called leachate that carries dangerous chemicals into the soil and groundwater. Meanwhile, burning e-waste releases toxic fumes into the air. The problem is global — an estimated 80% of e-waste is either landfilled or informally recycled in developing countries under unsafe conditions."
+        },
+        {
+          "type": "list",
+          "id": "toxins",
+          "title": "Toxic Materials in E-Waste",
+          "items": [
+            { "emoji": "☠️", "label": "Lead", "desc": "Found in solder and CRT monitors. Damages the nervous system and kidneys." },
+            { "emoji": "☠️", "label": "Mercury", "desc": "Used in flat-screen displays and switches. Highly toxic, accumulates in the food chain." },
+            { "emoji": "☠️", "label": "Cadmium", "desc": "Found in batteries and semiconductors. Carcinogenic, accumulates in organs." },
+            { "emoji": "☠️", "label": "Brominated Flame Retardants", "desc": "Added to plastic casings. Disrupts hormones and persists in the environment." },
+            { "emoji": "☠️", "label": "Beryllium", "desc": "Used in circuit boards. Causes chronic lung disease when inhaled." },
+            { "emoji": "☠️", "label": "PVC Plastics", "desc": "Cable insulation. Releases dioxins when burned — among the most toxic known substances." }
+          ]
+        },
+        {
+          "type": "grid",
+          "id": "impact-areas",
+          "title": "How E-Waste Affects Our World",
+          "items": [
+            { "emoji": "🌊", "label": "Water Contamination", "desc": "Toxic leachate seeps into groundwater, affecting drinking water supplies for communities near landfills." },
+            { "emoji": "🌱", "label": "Soil Degradation", "desc": "Heavy metals accumulate in soil, making it infertile and entering the food chain through crops." },
+            { "emoji": "🌬️", "label": "Air Pollution", "desc": "Burning e-waste releases dioxins, furans, and heavy metals into the air we breathe." },
+            { "emoji": "🧑‍⚕️", "label": "Human Health", "desc": "Communities near e-waste sites face higher rates of cancer, respiratory disease, and birth defects." }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "climate",
+          "title": "E-Waste and Climate Change",
+          "body": "The connection between e-waste and climate change is often overlooked. Mining and processing virgin materials for electronics is energy-intensive, contributing significant greenhouse gas emissions. When e-waste decomposes in landfills, it releases methane — a greenhouse gas 25 times more potent than CO₂. And manufacturing new electronics from scratch generates far more emissions than using recycled materials. For example, recycling one million laptops saves the energy equivalent of powering 3,500 US homes for an entire year."
+        },
+        {
+          "type": "callout",
+          "id": "solution",
+          "emoji": "🌱",
+          "title": "The Good News",
+          "body": "Every device you recycle makes a measurable difference. Proper recycling prevents toxic materials from entering the environment, saves energy, reduces mining, and cuts greenhouse gas emissions. Your actions matter — and they add up."
+        }
+      ]
+    },
+    "theProcess": {
+      "heroTitle": "The Recycling Process",
+      "heroSubtitle": "What actually happens to your device after you drop it off for recycling? Follow the journey from your home to becoming new products.",
+      "sections": [
+        {
+          "type": "text",
+          "id": "intro",
+          "title": "A Journey of Transformation",
+          "body": "E-waste recycling is a sophisticated, multi-stage process that combines human expertise with cutting-edge technology. Certified recyclers like Terionix follow strict protocols to ensure every component is handled safely and every recoverable material is captured. Here's how it works."
+        },
+        {
+          "type": "timeline",
+          "id": "steps",
+          "title": "The 6 Steps of E-Waste Recycling",
+          "steps": [
+            { "number": 1, "emoji": "🚛", "title": "Collection & Transport", "body": "E-waste is collected from homes, offices, schools, and drop-off centers. Certified transporters safely move it to the recycling facility with full tracking documentation." },
+            { "number": 2, "emoji": "🗂️", "title": "Manual Sorting", "body": "Items are sorted by type. Working devices are set aside for refurbishment and resale — extending their life. Non-working items are sorted into categories: large appliances, small electronics, cables, batteries, etc." },
+            { "number": 3, "emoji": "🔧", "title": "Dismantling", "body": "Skilled technicians take devices apart by hand. Batteries are removed (they require special handling). Circuit boards, hard drives, wiring, and plastic casings are separated into different streams." },
+            { "number": 4, "emoji": "⚙️", "title": "Shredding & Separation", "body": "Materials are fed into powerful shredders that break them into tiny pieces. Advanced technologies — magnets, eddy currents, optical sensors, and density separators — sort the materials into pure streams: ferrous metals, non-ferrous metals, plastics, and glass." },
+            { "number": 5, "emoji": "🔬", "title": "Material Recovery", "body": "Pure materials are processed further. Metals are smelted into ingots. Plastics are melted into pellets. Precious metals like gold and silver are extracted using chemical and electrolytic processes. These raw materials are sold to manufacturers." },
+            { "number": 6, "emoji": "✨", "title": "New Life", "body": "Recovered materials become new products. Gold from circuit boards goes into new electronics. Copper from wiring becomes plumbing or cables. Plastic pellets become furniture, auto parts, or even new electronics. The circle is complete." }
+          ]
+        },
+        {
+          "type": "stats",
+          "id": "outcome",
+          "title": "What Recycling Achieves",
+          "stats": [
+            { "value": "95%", "unit": "recovery rate", "label": "of e-waste materials can be recovered with modern recycling technology" },
+            { "value": "90%", "unit": "less emissions", "label": "compared to manufacturing new products from virgin materials" },
+            { "value": "15M+", "unit": "liters saved", "label": "of water saved per ton of electronics recycled instead of mined" },
+            { "value": "80%", "unit": "less energy", "label": "recycling aluminum requires 80% less energy than mining new ore" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "certification",
+          "title": "Certified Recycling Matters",
+          "body": "Not all recycling is equal. Certified recyclers like Terionix follow strict standards for data destruction, worker safety, and environmental protection. When you choose a certified recycler, you can be confident that your devices won't end up in a landfill or be shipped to developing countries for unsafe processing. Always ask for certification when choosing an e-waste recycler."
+        }
+      ]
+    },
+    "quiz": {
+      "heroTitle": "Knowledge Check",
+      "heroSubtitle": "You've learned a lot! Now let's see how much you remember. Answer these 8 questions covering everything from the course.",
+      "questions": [
+        {
+          "question": "What does 'e-waste' refer to?",
+          "options": ["Only computer monitors", "Any discarded electronic device with a plug or battery", "Only smartphones and tablets", "Packaging from electronics"],
+          "correct": 1,
+          "explanation": "E-waste includes any discarded electrical or electronic device — anything with a plug, battery, or circuit board."
+        },
+        {
+          "question": "How much e-waste was generated globally in 2024?",
+          "options": ["10 million metric tons", "62 million metric tons", "100 million metric tons", "5 million metric tons"],
+          "correct": 1,
+          "explanation": "A record 62 million metric tons of e-waste was generated in 2024 — that's growing 3x faster than any other waste stream."
+        },
+        {
+          "question": "What percentage of e-waste is formally recycled worldwide?",
+          "options": ["About 17%", "About 50%", "About 35%", "About 78%"],
+          "correct": 0,
+          "explanation": "Only about 17% of the world's e-waste is formally collected and recycled. The other 78%+ is unaccounted for — landfilled, burned, or informally processed."
+        },
+        {
+          "question": "How much more gold is in one ton of smartphones vs. one ton of gold ore?",
+          "options": ["About the same", "10 times more", "100 times more", "1000 times more"],
+          "correct": 2,
+          "explanation": "Smartphones have about 100 times more gold per ton than natural gold ore — making urban mining incredibly efficient!"
+        },
+        {
+          "question": "Which toxic substance is commonly found in flat-screen displays?",
+          "options": ["Lead", "Mercury", "Cadmium", "Arsenic"],
+          "correct": 1,
+          "explanation": "Mercury is used in flat-screen displays and switches. It's highly toxic and accumulates in the food chain."
+        },
+        {
+          "question": "What is 'urban mining'?",
+          "options": ["Mining in cities for minerals", "Recovering valuable materials from discarded electronics", "Recycling concrete from demolished buildings", "Extracting oil from urban waste"],
+          "correct": 1,
+          "explanation": "Urban mining is the process of recovering valuable materials like gold, silver, and copper from discarded electronics instead of mining them from the earth."
+        },
+        {
+          "question": "About how much of a mobile phone's materials can be recovered?",
+          "options": ["25%", "50%", "75%", "95%"],
+          "correct": 3,
+          "explanation": "Up to 95% of materials in a mobile phone can be recovered and reused, including precious metals, copper, plastics, and glass."
+        },
+        {
+          "question": "Why is certified recycling important?",
+          "options": ["It's cheaper", "It ensures safe handling, data destruction, and environmental standards", "It's faster", "It's the only legal option"],
+          "correct": 1,
+          "explanation": "Certified recyclers follow strict standards for worker safety, environmental protection, and data security — ensuring your devices are handled responsibly."
+        }
+      ]
+    },
+    "takeAction": {
+      "heroTitle": "Take Action",
+      "heroSubtitle": "Knowledge is only the first step. Now it's time to turn what you've learned into real action. Choose your commitments and start making a difference today.",
+      "sections": [
+        {
+          "type": "text",
+          "id": "why-act",
+          "title": "Your Actions Matter",
+          "body": "E-waste recycling starts with individual choices. Every device you recycle instead of trash, every friend you educate, every brand you question about their sustainability practices — it all adds up. When millions of people make the right choice, the impact is enormous."
+        },
+        {
+          "type": "list",
+          "id": "steps",
+          "title": "How to Recycle Your Electronics",
+          "items": [
+            { "emoji": "1️⃣", "label": "Find a Certified Recycler", "desc": "Search for TNPCB/CPCB authorized recyclers in your area. Look for certifications and read reviews." },
+            { "emoji": "2️⃣", "label": "Prepare Your Devices", "desc": "Back up your data, sign out of accounts, factory reset where possible. For hard drives, ask about data destruction." },
+            { "emoji": "3️⃣", "label": "Drop Off or Schedule Pickup", "desc": "Many recyclers offer free drop-off or scheduled pickups. Bundle your e-waste to minimize trips." },
+            { "emoji": "4️⃣", "label": "Get a Certificate", "desc": "Ask for a certificate of recycling or data destruction for your records — especially for business devices." },
+            { "emoji": "5️⃣", "label": "Spread the Word", "desc": "Tell friends, family, and colleagues. Share what you've learned. Collective action creates real change." }
+          ]
+        }
+      ],
+      "pledge": {
+        "title": "Take the Pledge",
+        "subtitle": "Make a personal commitment to be part of the solution.",
+        "commitments": [
+          "I will recycle all my old electronics responsibly instead of throwing them in the trash.",
+          "I will research and use certified e-waste recyclers in my area.",
+          "I will educate at least one friend or family member about e-waste recycling.",
+          "I will consider repairability and sustainability when buying new electronics.",
+          "I will support brands that design for recyclability and take responsibility for their products."
+        ],
+        "cta": "I Take the Pledge!"
+      }
+    }
+  },
+  "admin": {
+    "passwordHash": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918"
+  }
+}
