@@ -8,7 +8,7 @@ Designed to be run via cron at 6am:
 import datetime
 from datetime import timedelta
 
-from django.core.mail import send_mail
+from django.core.mail import get_connection, send_mail
 from django.core.management.base import BaseCommand
 from django.utils import timezone
 
@@ -73,6 +73,20 @@ class Command(BaseCommand):
 
         subject = f"Contact Submissions Digest — {now.strftime('%Y-%m-%d')}"
 
+        # Build SMTP connection from EmailConfig
+        if cfg.smtp_host:
+            connection = get_connection(
+                backend="django.core.mail.backends.smtp.EmailBackend",
+                host=cfg.smtp_host,
+                port=cfg.smtp_port,
+                username=cfg.smtp_user,
+                password=cfg.smtp_password,
+                use_tls=cfg.use_tls,
+                fail_silently=False,
+            )
+        else:
+            connection = None
+
         try:
             send_mail(
                 subject=subject,
@@ -80,6 +94,7 @@ class Command(BaseCommand):
                 html_message=html,
                 from_email=None,
                 recipient_list=[cfg.to_email],
+                connection=connection,
                 fail_silently=False,
             )
         except Exception as e:

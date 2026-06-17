@@ -3,7 +3,7 @@ import io
 import json
 
 from django.contrib.auth import authenticate
-from django.core.mail import send_mail
+from django.core.mail import get_connection, send_mail
 from django.http import StreamingHttpResponse
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
@@ -151,9 +151,11 @@ class ContactSubmissionViewSet(viewsets.ModelViewSet):
         subject = request.data.get("subject", "Contact Form Submissions")
         submission_ids = request.data.get("submission_ids", None)
 
+        # Fetch EmailConfig for SMTP settings and to_email fallback
+        cfg = EmailConfig.objects.first()
+
         # If no to_email, try EmailConfig
         if not to_email:
-            cfg = EmailConfig.objects.first()
             if cfg is None:
                 return Response(
                     {"success": False, "error": "No EmailConfig found and no to_email provided"},
@@ -195,12 +197,27 @@ class ContactSubmissionViewSet(viewsets.ModelViewSet):
         )
 
         try:
+            # Build SMTP connection from EmailConfig (if SMTP host is configured)
+            if cfg and cfg.smtp_host:
+                connection = get_connection(
+                    backend="django.core.mail.backends.smtp.EmailBackend",
+                    host=cfg.smtp_host,
+                    port=cfg.smtp_port,
+                    username=cfg.smtp_user,
+                    password=cfg.smtp_password,
+                    use_tls=cfg.use_tls,
+                    fail_silently=False,
+                )
+            else:
+                connection = None
+
             send_mail(
                 subject=subject,
                 message="",
                 html_message=html,
                 from_email=None,
                 recipient_list=[to_email],
+                connection=connection,
                 fail_silently=False,
             )
         except Exception as e:
