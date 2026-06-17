@@ -54,3 +54,20 @@ class GameItem(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class EmailConfig(models.Model):
+    to_email = models.EmailField(help_text="Default recipient email for daily digest")
+    smtp_host = models.CharField(max_length=256)
+    smtp_port = models.IntegerField()
+    smtp_user = models.CharField(max_length=256)
+    smtp_password = models.CharField(max_length=512)
+    use_tls = models.BooleanField(default=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = "email config"
+        verbose_name_plural = "email config"
+
+    def __str__(self):
+        return f"EmailConfig → {self.to_email}"

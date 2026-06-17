@@ -8,6 +8,7 @@ router.register(r"content", views.ContentSectionViewSet, basename="content")
 router.register(r"submissions", views.ContactSubmissionViewSet, basename="submission")
 router.register(r"leaderboard", views.LeaderboardEntryViewSet, basename="leaderboard")
 router.register(r"game-items", views.GameItemViewSet, basename="game-item")
+router.register(r"email-config", views.EmailConfigViewSet, basename="email-config")
 
 urlpatterns = [
     # Content
