@@ -57,11 +57,11 @@ class GameItem(models.Model):
 
 
 class EmailConfig(models.Model):
-    to_email = models.EmailField(help_text="Default recipient email for daily digest")
-    smtp_host = models.CharField(max_length=256)
-    smtp_port = models.IntegerField()
-    smtp_user = models.CharField(max_length=256)
-    smtp_password = models.CharField(max_length=512)
+    to_email = models.EmailField(blank=True, default="", help_text="Default recipient email for daily digest")
+    smtp_host = models.CharField(max_length=256, blank=True, default="")
+    smtp_port = models.IntegerField(null=True, blank=True)
+    smtp_user = models.CharField(max_length=256, blank=True, default="")
+    smtp_password = models.CharField(max_length=512, blank=True, default="")
     use_tls = models.BooleanField(default=True)
     updated_at = models.DateTimeField(auto_now=True)
 
