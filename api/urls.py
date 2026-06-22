@@ -11,6 +11,8 @@ router.register(r"game-items", views.GameItemViewSet, basename="game-item")
 router.register(r"email-config", views.EmailConfigViewSet, basename="email-config")
 
 urlpatterns = [
+    # Health
+    path("checkhealth", views.checkhealth, name="checkhealth"),
     # Content
     path("content", views.content_tree, name="content-tree"),
     path("content/<str:section_key>", views.content_detail, name="content-detail"),

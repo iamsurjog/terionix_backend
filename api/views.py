@@ -279,6 +279,17 @@ class GameItemViewSet(viewsets.ModelViewSet):
         return [IsAuthenticated()]
 
 
+@api_view(["GET"])
+@permission_classes([AllowAny])
+def checkhealth(request):
+    from datetime import datetime
+    return Response({
+        "status": "ok",
+        "service": "backend",
+        "timestamp": datetime.now().isoformat(),
+    })
+
+
 @api_view(["POST"])
 @permission_classes([AllowAny])
 @csrf_exempt
