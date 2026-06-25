@@ -1,7 +1,7 @@
 from django.urls import path
 from rest_framework.routers import DefaultRouter
 
-from . import views
+from . import tender_views, views
 
 router = DefaultRouter(trailing_slash=False)
 router.register(r"content", views.ContentSectionViewSet, basename="content")
@@ -11,6 +11,11 @@ router.register(r"game-items", views.GameItemViewSet, basename="game-item")
 router.register(r"email-config", views.EmailConfigViewSet, basename="email-config")
 
 urlpatterns = [
+    # Tenders
+    path("tenders", tender_views.TenderListView.as_view(), name="tender-list"),
+    path("tenders/refresh", tender_views.refresh_tenders, name="tender-refresh"),
+    path("tenders/scrape-status", tender_views.scrape_status, name="tender-scrape-status"),
+    path("scraper/callback", tender_views.scraper_callback, name="scraper-callback"),
     # Health
     path("checkhealth", views.checkhealth, name="checkhealth"),
     # Content

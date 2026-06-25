@@ -71,3 +71,21 @@ class EmailConfig(models.Model):
 
     def __str__(self):
         return f"EmailConfig → {self.to_email}"
+
+
+class Tender(models.Model):
+    serial_no = models.CharField(max_length=64)
+    published_date = models.CharField(max_length=32)
+    closing_date = models.CharField(max_length=32)
+    opening_date = models.CharField(max_length=32)
+    title = models.TextField()
+    reference_identifiers = models.JSONField(default=list)
+    organization_chain = models.TextField(blank=True, default="")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+        verbose_name_plural = "tenders"
+
+    def __str__(self):
+        return self.title
