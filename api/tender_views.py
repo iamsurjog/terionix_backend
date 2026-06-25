@@ -39,11 +39,14 @@ class TenderListView(generics.ListAPIView):
         qs = super().get_queryset()
         q = self.request.query_params.get("q", "").strip()
         if q:
-            qs = qs.filter(
-                models.Q(title__icontains=q)
-                | models.Q(organization_chain__icontains=q)
-                | models.Q(reference_identifiers__icontains=q)
-            )
+            terms = [t.strip() for t in q.split(",") if t.strip()]
+            if terms:
+                query = models.Q()
+                for term in terms:
+                    query |= models.Q(title__icontains=term) | models.Q(
+                        organization_chain__icontains=term
+                    ) | models.Q(reference_identifiers__icontains=term)
+                qs = qs.filter(query)
         return qs
 
 
